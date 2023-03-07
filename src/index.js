@@ -6,6 +6,9 @@ import oldPortfolio from './images/oldPortfolio.png';
 import gymWebsite from './images/gymWebsite.png';
 import weatherApp from './images/weatherApp.png';
 import todoList from './images/todoList.png';
+import mixerFixerScreenShot from './images/mixerFixerScreenShot.png';
+import pizzaScreenShot from './images/pizzaScreenShot.png';
+import blender from './images/blender.gif';
 
  window.transitionToPage = function(href) {
     document.querySelector('body').style.opacity = 0
@@ -44,11 +47,11 @@ if(document.title == "Portfolio"){
     }
 
     addImage("sec1",gymWebsite);
-    addImage("sec2",oldPortfolio);
+    addImage("sec2",pizzaScreenShot);
     addImage("sec3",signInPic);
     addImage("sec4",weatherApp);
-    addImage("sec5",oldPortfolio);
+    addImage("sec5",mixerFixerScreenShot);
     addImage("sec6",todoList);
     addImage("sec7",oldPortfolio);
-    addImage("sec8",oldPortfolio);
+    addImage("sec8",blender);
 }
