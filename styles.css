@@ -84,6 +84,8 @@ justify-content: center;
 .navigation{
     display: flex;
     justify-content: end;
+    position: absolute;
+    right: 0;
 }
 
 .navigation ul{
@@ -118,6 +120,7 @@ justify-content: center;
     flex-direction: column;
     justify-content: center;
     height: 85vh;
+    margin-top: 5vh;
     width: 100%;
 }
 .myPic{
@@ -142,6 +145,14 @@ justify-content: center;
     margin-top: 2vh;
     height: 100%;
     z-index: 2;
+    -webkit-transition: -webkit-transform 0.1s;
+	transition: -webkit-transform 0.1s;
+	transition: transform 0.1s;
+	transition: transform 0.1s, -webkit-transform 0.1s;
+}
+.myPic img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
 }
 .backgroundPart{
     animation-duration: 2s;
