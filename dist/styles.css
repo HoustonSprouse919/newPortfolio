@@ -86,6 +86,7 @@ justify-content: center;
     justify-content: end;
     position: absolute;
     right: 0;
+    z-index: 10;
 }
 
 .navigation ul{
