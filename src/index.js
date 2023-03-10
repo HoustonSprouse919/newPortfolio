@@ -10,6 +10,18 @@ import mixerFixerScreenShot from './images/mixerFixerScreenShot.png';
 import pizzaScreenShot from './images/pizzaScreenShot.png';
 import blender from './images/blender.gif';
 
+const observer = new IntersectionObserver((entries) => { // this is an observer to see if
+    entries.forEach((entry) => { // current section is on screen
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+  
+  const hiddenElements = document.querySelectorAll('.hidden'); // adds event listener to all objects that are hidden
+  hiddenElements.forEach((el) => observer.observe(el));
  window.transitionToPage = function(href) {
     document.querySelector('body').style.opacity = 0
     setTimeout(function() { 
