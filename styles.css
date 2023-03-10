@@ -1,167 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital@1&family=Gothic+A1:wght@200&family=Oswald:wght@600&display=swap');body{
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:ital@1&family=Gothic+A1:wght@200&family=Oswald:wght@600&display=swap");
+body {
+  margin: 0;
 }
-body{
-   opacity: 0;
-   transition: opacity .5s;
-    overflow: hidden;
+body {
+  opacity: 0;
+  transition: opacity 0.5s;
+  overflow: hidden;
 }
-.main{
-    display: grid;
-    grid-template-columns: .75fr 6fr 8fr;
-    height: 100vh;
-    width: 100vw;
+.main {
+  display: grid;
+  grid-template-columns: 0.75fr 6fr 8fr;
+  height: 100vh;
+  width: 100vw;
 }
-.sidebar{
-    background-color: black;
-    color: white;
-    writing-mode:vertical-lr;
-    text-align: center;
+.sidebar {
+  background-color: black;
+  color: white;
+  writing-mode: vertical-lr;
+  text-align: center;
 }
-.sidebar h2{
-    transform: rotate(180deg);
-    font-family: 'Alegreya SC', serif;
-}
-
-.attentionGrab{
-    grid-column-start: 2;
-}
-.attentionGrab h2{
-    font-family: 'Oswald', sans-serif;
-    font-size: 3.5vh;
-    margin-left:2vw ;
-}
-.attentionGrab h1{
-    margin: 15vh 0 0 1vw;
-    font-family: 'Gothic A1', sans-serif;
-    font-size: 7vw;
-}
-.attentionGrab p{
-    font-size: 1.5vw;
-    padding: 0px 5%;
-}
-.callToAction{
-    text-align: center;
-}
-.checkOut{
-    margin: 5vh 0 0 2vw;
-}
-.socialLinks{
-display: flex;
-margin-top: 27vh;
-justify-content: center;
-}
-.socialLinks ul{
-    display: flex;
-    gap: 1vh;
-    list-style: none;
-}
-.socialLinks svg{
-    height: 6vh;
-    width:6vh;
+.sidebar h2 {
+  transform: rotate(180deg);
+  font-family: "Alegreya SC", serif;
 }
 
-.contrastPicSec{
-    grid-column-start: 3;
+.attentionGrab {
+  grid-column-start: 2;
 }
-.backgroundColor{
-    animation: 4s slowlyMove infinite alternate;
-    background-color: #7AFF94;
-    height: 100vh;
-    position: absolute;
-    width: 54.3vw;
-    z-index: -1;
+.attentionGrab h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3.5vh;
+  font-weight: lighter;
+  margin-left: 2vw;
+}
+.attentionGrab h1 {
+  margin: 15vh 0 0 1vw;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 7vw;
+}
+.attentionGrab p {
+  font-size: 2.0vw;
+  font-weight: bold;
+}
+#typingTxt{
+    color: #ff817a;
+    font-size: 2.25vw;
+    font-weight: bold;
+}
+.callSec{
+    padding: 0 5%;
+    height: 15vh;
+}
+.checkOut {
+  margin: 2vh 0 0 2vw;
+}
+.socialLinks {
+  display: flex;
+  margin-top: 27vh;
+  justify-content: center;
+}
+.socialLinks ul {
+  display: flex;
+  gap: 1vh;
+  list-style: none;
+}
+.socialLinks svg {
+  height: 6vh;
+  width: 6vh;
+}
+
+.contrastPicSec {
+  grid-column-start: 3;
+}
+.backgroundColor {
+  animation: 4s slowlyMove infinite alternate;
+  background-color: #7aff94;
+  height: 100vh;
+  position: absolute;
+  width: 54.3vw;
+  z-index: -1;
 }
 @keyframes slowlyMove {
-    from {
-        transform: translateX(0px);
-    }
-    to {
-        transform: translateX(4vw);
-    }
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(4vw);
+  }
 }
 
-.navigation{
-    display: flex;
-    justify-content: end;
-    position: absolute;
-    right: 0;
-    z-index: 10;
+.navigation {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  right: 0;
+  z-index: 10;
 }
 
-.navigation ul{
-    display: flex;
-    list-style: none;
-    gap: 3vw;
-    margin: 5vh 5vw 0 0;
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+  margin: 5vh 5vw 0 0;
 }
-.navigation button{
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+.navigation button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
-.navigation span{
-    font-size: 2.25vh;
-    font-weight: bold;
-    transition-property: color;
-    transition-duration: .5s;
-    transition-timing-function: ease-out;
+.navigation span {
+  font-size: 2.25vh;
+  font-weight: bold;
+  transition-property: color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
-.navigation span:hover{
-    color: white;
-    cursor: pointer;
-    -webkit-text-stroke: .3px rgba(0, 0, 0, 0.534);
+.navigation span:hover {
+  color: white;
+  cursor: pointer;
+  -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.534);
 }
-.picSec{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 85vh;
-    margin-top: 5vh;
-    width: 100%;
+.picSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85vh;
+  margin-top: 5vh;
+  width: 100%;
 }
-.myPic{
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    margin-left: 20%;
+.myPic {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
 }
 @keyframes slidein {
-    from {
-      margin-left: 60%;
-    }
-  
-    to {
-      margin-left: 0%;
-    }
+  from {
+    margin-left: 60%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }
 
-.myPic img{
-    animation-duration: 2s;
-    animation-name: slidein;
-    margin-top: 2vh;
-    height: 100%;
-    z-index: 2;
-    -webkit-transition: -webkit-transform 0.1s;
-	transition: -webkit-transform 0.1s;
-	transition: transform 0.1s;
-	transition: transform 0.1s, -webkit-transform 0.1s;
+.myPic img {
+  animation-duration: 2s;
+  animation-name: slidein;
+  margin-top: 2vh;
+  height: 100%;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
 }
-.myPic img:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.05);
+.myPic img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
 }
-.backgroundPart{
-    animation-duration: 2s;
-    animation-name: slidein;
-    background-color: rgb(2, 2, 2); 
-    height: 78%;
-    margin: 3vh 1vw 0vh 0vw;
-    position: absolute;
-    width: 35%;
-    z-index: 1;
+.backgroundPart {
+  animation-duration: 2s;
+  animation-name: slidein;
+  background-color: rgb(2, 2, 2);
+  height: 78%;
+  margin: 3vh 1vw 0vh 0vw;
+  position: absolute;
+  width: 35%;
+  z-index: 1;
+}
+
+.hidden {
+  filter: blur(5px);
+  opacity: 0;
+  transform: translateX(-150%);
+  transition: all 1s;
+}
+
+.show {
+  filter: blur(0);
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.projectSection:nth-child(2) {
+  transition-delay: 200ms;
+}
+.projectSection:nth-child(3) {
+  transition-delay: 300ms;
+}
+.projectSection:nth-child(4) {
+  transition-delay: 400ms;
+}
+.projectSection:nth-child(5) {
+  transition-delay: 500ms;
+}
+.projectSection:nth-child(6) {
+  transition-delay: 600ms;
+}
+.projectSection:nth-child(7) {
+  transition-delay: 700ms;
+}
+.projectSection:nth-child(8) {
+  transition-delay: 800ms;
 }
