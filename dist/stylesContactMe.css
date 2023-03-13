@@ -1,0 +1,28 @@
+.backgroundColor2{
+    background-color: #7AFF94;
+    position: absolute;
+    width: 20%;
+    height: 100vh;
+    right: 60%;
+    z-index: -1;
+}
+.second{
+    display: flex;
+    margin: 0;
+    position: relative;
+    width: 95vw;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutMe{
+    text-align: center;
+    margin-top: 20vh;
+    width: 75%;
+}
+h1{
+    font-size: 4vw;
+    margin: 0;
+}
+p{
+    font-size: 2vw;
+}
