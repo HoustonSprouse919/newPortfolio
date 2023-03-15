@@ -5,16 +5,26 @@
 .aboutMe{
     margin-top: 25vh;
     width: 92vw;
+    display: flex;
+    align-items: bottom;
 }
 .aboutMeText{
-    width: 50%;
+    width:100%;
     padding: 0 5%;
 }
 .aboutMeText h1{
-    text-align: center;
+    text-align: left;
     font-size: 8vh;
     margin: 0px;
 }
+h1::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    width: 15%;
+    position: relative;
+    bottom: 5px; /* your padding + border-width */
+  }
 .aboutMeText p{
     font-size: 2.25vh;
 }
@@ -25,5 +35,10 @@
     height: 100vh;
     right: 10%;
     z-index: -1;
+}
+.sidePic{
+    width: 40vh;
+    height: 50vh;
+    margin-right: 10vw;
 }
 
