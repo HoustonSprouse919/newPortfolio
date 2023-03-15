@@ -1,11 +1,11 @@
 .backgroundColor2{
     background-color: #7AFF94;
     position: absolute;
-    width: 20%;
-    height: 100vh;
-    right: 60%;
+    width: 100vw;
+    height: 10vh;
     z-index: -1;
 }
+
 .second{
     display: flex;
     margin: 0;
@@ -25,4 +25,23 @@ h1{
 }
 p{
     font-size: 2vw;
+}
+
+ul{
+    list-style: none;   
+}
+
+.waveAnimation{
+    position: absolute;
+    bottom: 0;
+    aspect-ratio: 960/300;
+    width: 110%;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.layer1{
+    background-image: url('./wave1.svg');
 }

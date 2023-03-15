@@ -9,6 +9,7 @@ import todoList from './images/todoList.png';
 import mixerFixerScreenShot from './images/mixerFixerScreenShot.png';
 import pizzaScreenShot from './images/pizzaScreenShot.png';
 import blender from './images/blender.gif';
+import skeleton from './images/skeleton.gif';
 
 const observer = new IntersectionObserver((entries) => { // this is an observer to see if
     entries.forEach((entry) => { // current section is on screen
@@ -66,4 +67,16 @@ if(document.title == "Portfolio"){
     addImage("sec6",todoList);
     addImage("sec7",oldPortfolio);
     addImage("sec8",blender);
+} else if (document.title == "About Me"){
+    function addImage(divName,imageUsed){
+        const element = document.querySelector(`.${divName}`);
+        const projectPic = new Image();
+        projectPic.src = imageUsed;
+      
+        element.appendChild(projectPic);
+      
+         return element;
+    }
+    addImage("sidePic",skeleton);
+
 }
