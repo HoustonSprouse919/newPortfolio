@@ -1,47 +1,83 @@
-.backgroundColor2{
-    background-color: #7AFF94;
-    position: absolute;
-    width: 100vw;
-    height: 10vh;
-    z-index: -1;
+.backgroundColor2 {
+  background-color: #7aff94;
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  z-index: -1;
 }
 
-.second{
-    display: flex;
-    margin: 0;
-    position: relative;
-    width: 95vw;
-    flex-direction: column;
-    align-items: center;
+.second {
+  display: flex;
+  margin: 0;
+  position: relative;
+  width: 95vw;
+  flex-direction: column;
+  align-items: center;
 }
-.aboutMe{
-    text-align: center;
-    margin-top: 20vh;
-    width: 75%;
+.aboutMe {
+  text-align: center;
+  margin-top: 20vh;
+  width: 75%;
 }
-h1{
-    font-size: 4vw;
-    margin: 0;
+h1 {
+  font-size: 4vw;
+  margin: 0;
 }
-p{
-    font-size: 2vw;
+p {
+  font-size: 2vw;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+.contactList {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.contactList li {
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactList li .socialButton {
+    background-color: #7aceff;
+  border-radius: 50%;
+  height: 20vh;
+  position: relative;
+  width: 20vh;
+}
+.socialButton svg {
+  color: white;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contactList li h2{
+    font-size: 2vh;
+}
+a{
+    color: black;
+    text-decoration: none;
 }
 
-ul{
-    list-style: none;   
+.waveAnimation {
+  position: absolute;
+  bottom: 0;
+  aspect-ratio: 960/300;
+  width: 110%;
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
-
-.waveAnimation{
-    position: absolute;
-    bottom: 0;
-    aspect-ratio: 960/300;
-    width: 110%;
-    height: 60vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-.layer1{
-    background-image: url('./wave1.svg');
+.layer1 {
+  background-image: url("./wave1.svg");
 }
