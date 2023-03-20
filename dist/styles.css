@@ -1,16 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:ital@1&family=Gothic+A1:wght@200&family=Oswald:wght@600&display=swap");
+html {
+  /*makes scrolling smooth and removes ugly scroll bars*/
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 body {
   margin: 0;
 }
 body {
   opacity: 0;
   transition: opacity 0.5s;
-  overflow: hidden;
 }
 .main {
   display: grid;
   grid-template-columns: 0.75fr 6fr 8fr;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 .sidebar {
@@ -23,6 +33,7 @@ body {
   transform: rotate(180deg);
   font-family: "Alegreya SC", serif;
   font-size: 2.5vh;
+  white-space: nowrap
 }
 
 .attentionGrab {
@@ -213,4 +224,120 @@ body {
 }
 .projectSection:nth-child(8) {
   transition-delay: 800ms;
+}
+
+
+@media (max-width: 1100px) {
+  .sidebar h2 {
+    font-size: 2.5vw;
+    word-wrap: unset;
+  }
+  .picSec{
+    margin-right: 20vw;
+  }
+  .backgroundColor{
+    width: 100vw;
+  }
+  .attentionGrab h1{
+    font-size: 10vw;
+  }
+  .attentionGrab p{
+    font-size: 2.25vw;
+  }
+  .myPic{
+    height: 60vh;
+    width: 35vh;
+  }
+  .backgroundPart{
+    height: 60vh;
+    width: 35vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar h2{
+    font-size: 3vw;
+  }
+  .myPic{
+    height: 50vh;
+    width: 30vh;
+  }
+  .backgroundPart{
+    height: 50vh;
+    width: 30vh;
+  }
+  .attentionGrab{
+    width: 40vw;
+  }
+  .attentionGrab p{
+    font-size: 3vw;
+  }
+  #typingTxt{
+    font-size: 3.25vw;
+  }
+  .picSec{
+    margin-right: 0vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .main{
+    display: inline-block;
+  }
+.sidebar{
+  display:none !important;
+}
+.attentionGrab{
+  display: flex;
+  flex-direction: column;
+  margin: 0 5vw;
+  width: 100vw;
+}
+.attentionGrab h1{
+  margin: 15vh 5vw 0 5vw;
+  font-size: 15vw;
+}
+.attentionGrab p{
+  font-size: 5vw;
+}
+#typingTxt{
+  font-size: 6.0vw;
+}
+.checkOut {
+  margin: 10vh 5vw 0 5vw;
+}
+.socialLinks{
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  right: 50%;
+  left: 50%;
+}
+.navigation{
+  position:absolute;
+  top: 0;
+}
+.navigation span{
+  font-size: 3vw;
+}
+.picSec{
+  display: none !important;
+}
+.backgroundColor{
+  top: 0;
+  margin-left: 30vw;
+  height: 10vh;
+}
+}
+@media (max-width: 600px) {
+  .attentionGrab h2{
+    font-size: 5vw;
+    margin-top:4vh ;
+  }
+  .navigation span{
+    font-size: 3.25vw;
+  }
+  .checkOut {
+    margin: 0vh 5vw 0 5vw;
+  }
 }
