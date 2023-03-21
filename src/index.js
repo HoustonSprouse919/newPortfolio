@@ -21,6 +21,7 @@ const observer = new IntersectionObserver((entries) => { // this is an observer 
     });
   });
   
+  
   const hiddenElements = document.querySelectorAll('.hidden'); // adds event listener to all objects that are hidden
   hiddenElements.forEach((el) => observer.observe(el));
  window.transitionToPage = function(href) {
