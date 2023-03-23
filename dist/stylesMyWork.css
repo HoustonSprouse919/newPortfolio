@@ -6,7 +6,6 @@
     text-align: center;
     width: 100%;
     align-items: center;
-    overflow: hidden;
 }
 
 .backgroundMyWork{
@@ -124,19 +123,18 @@
 }
 @media (max-width: 800px) {
     .myWork{
-        height: 130vh; 
+        height: 80vh; 
         width: 100;
     }
     .layoutForWork{
         display: flex;
         flex-wrap: wrap;
-        height: 80vh;
         align-items: center;
         justify-content: center;
-        overflow: auto;
-        padding: 10vh;
+        padding: 5vh;
+        height: 100%;
     }
-    .layout::-webkit-scrollbar {
+    .layoutForWork::-webkit-scrollbar {
         display: none;
       }
       
@@ -147,7 +145,10 @@
       }
     .projectSection{
         height: 25vh;
-        width: 25vh;
+        width: 65vw;
+    }
+    .titleDesc{
+        display: block;
     }
     .projectSection:nth-child(2) {
         transition-delay: 0ms;
@@ -170,4 +171,5 @@
       .projectSection:nth-child(8) {
         transition-delay: 0ms;
       }
+
 }
