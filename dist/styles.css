@@ -9,13 +9,11 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-}
-body {
+  overflow-x: hidden;
   margin: 0;
-}
-body {
   opacity: 0;
   transition: opacity 0.5s;
+  position: relative
 }
 .main {
   display: grid;
