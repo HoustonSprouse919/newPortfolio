@@ -1,48 +1,107 @@
-.second{
-    margin: 0;
-    position: relative;
+.second {
+  margin: 0;
+  position: relative;
 }
-.aboutMe{
-    margin-top: 20vh;
-    width: 100vw;
-    display: flex;
-    align-items: bottom;
+.aboutMe {
+  margin-top: 15vh;
+  width: 100vw;
+  display: flex;
+  align-items: bottom;
 }
-.aboutMeText{
-    width:60%;
-    padding: 0 5%;
+.aboutMeText {
+  width: 60%;
+  padding: 0 5%;
 }
-.aboutMeText h1{
-    text-align: left;
-    font-size: 8vh;
-    margin: 0px;
+.aboutMeText h1 {
+  text-align: left;
+  font-size: 8vh;
+  margin: 0px;
 }
 h1::after {
-    content: "";
-    display: block;
-    border-bottom: 3px solid rgb(0, 0, 0);
-    width: 15%;
-    position: relative;
-    bottom: 5px; /* your padding + border-width */
+  content: "";
+  display: block;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  width: 15%;
+  position: relative;
+  bottom: 5px; /* your padding + border-width */
+}
+.aboutMeText p {
+  font-size: 3vh;
+}
+.backgroundColor2 {
+  background-color: #7aff94;
+  position: absolute;
+  width: 20%;
+  height: 120vh;
+  right: 10%;
+  z-index: -1;
+}
+.sidePic {
+  width: 40vh;
+  height: 50vh;
+  margin-right: 5vw;
+}
+.sidePic img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1000px) {
+  .aboutMeText h1 {
+    font-size: 10vw;
   }
-.aboutMeText p{
-    font-size: 3vh;
+  .aboutMeText p {
+    font-size: 3.5vw;
+  }
 }
-.backgroundColor2{
-    background-color: #7AFF94;
-    position: absolute;
-    width: 20%;
+@media (max-width: 800px) {
+  .second {
     height: 100vh;
-    right: 10%;
-    z-index: -1;
+    margin-top: -15vh;
+  }
+  .aboutMe {
+    padding-top: 15vh;
+  }
+  .aboutMeText {
+    width: 80%;
+  }
+  .aboutMeText h1 {
+    font-size: 11vw;
+  }
+  .aboutMeText p {
+    font-size: 4vw;
+  }
 }
-.sidePic{
-    width: 40vh;
-    height: 50vh;
-    margin-right: 5vw;
-}
-.sidePic img{
+@media (max-width: 600px) {
+  .aboutMe {
+    padding-top: 10vh;
+  }
+  .aboutMeText {
     width: 100%;
-    height: 100%;
+  }
+  .aboutMeText h1 {
+    font-size: 13vw;
+  }
+  .aboutMeText p {
+    font-size: 5vw;
+  }
 }
 
+@media (max-width: 500px) {
+  .aboutMeText {
+    width: 90%;
+  }
+  .aboutMe {
+    display: inline-block;
+  }
+  .aboutMeText h1 {
+    font-size: 15vw;
+  }
+  .aboutMeText p {
+    font-size: 5;
+  }
+  .sidePic {
+    width: 100vw;
+    height: 40vh;
+    margin-right: 0vw;
+  }
+}
