@@ -140,12 +140,13 @@ body {
   -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.534);
 }
 .picSec {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 85vh;
   margin-top: 5vh;
-  width: 100%;
+  width: 90%;
 }
 .myPic {
   height: 70vh;
