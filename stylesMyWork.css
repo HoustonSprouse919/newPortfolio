@@ -7,7 +7,7 @@
   width: 100%;
   align-items: center;
 }
-
+/*
 .backgroundMyWork {
   background-color: #7aff94;
   height: 300vw;
@@ -19,7 +19,7 @@
   z-index: -1;
   animation-duration: 1.5s;
   animation-name: slidein;
-}
+}*/
 .myWork {
   margin: 5vh 0 0 0;
   height: 80vh;
@@ -131,6 +131,8 @@
   .myWork {
     height: 80vh;
     width: 100%;
+    display: flex;
+    align-items: center;
   }
   .myWork h1 {
     margin-bottom: -4vh;
@@ -138,13 +140,14 @@
   .layoutForWork {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5vh;
     align-items: center;
     justify-content: center;
     padding: 5vh;
     height: 100%;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-    width: 85vw;
+    width: 70vw;
   }
   .projectSection {
     height: 25vh;
