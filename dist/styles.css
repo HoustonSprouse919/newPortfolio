@@ -22,7 +22,7 @@ body {
   grid-template-columns: 0.75fr 6fr 8fr;
   min-height: 100vh;
   width: 100vw;
-  height: 100%;
+  position: relative;
 }
 .sidebar {
   background-color: black;
@@ -140,7 +140,6 @@ body {
   -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.534);
 }
 .picSec {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
