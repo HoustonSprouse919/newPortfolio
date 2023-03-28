@@ -1,3 +1,7 @@
+
+.navigation{
+    position: absolute;
+}
 .second {
   margin: 0;
   position: relative;
@@ -32,7 +36,7 @@ h1::after {
   background-color: #7aff94;
   position: absolute;
   width: 20%;
-  height: 120vh;
+  height: 100%;
   right: 10%;
   z-index: -1;
 }
