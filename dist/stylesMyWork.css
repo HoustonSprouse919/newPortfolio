@@ -3,6 +3,7 @@ body{
 }
 .main{
   background-color: var(--accent);
+  overflow: auto;
 }
 .sidebar{
   background-color: var(--mainBackground);
@@ -135,7 +136,6 @@ body{
     justify-content: center;
     padding: 5vh;
     height: 100%;
-    -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
     width: 60vw;
   }
