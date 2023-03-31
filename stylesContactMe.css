@@ -2,7 +2,7 @@
   z-index: 1;
 }
 .backgroundColor2 {
-  background-color: #7aff94;
+  background-color: var(--mainBackground);
   position: absolute;
   width: 100vw;
   height: 10vh;
@@ -90,6 +90,46 @@ a {
 .layer1 {
   background-image: url("./wave1.svg");
 }
+@media (min-width: 1600px) {
+  h1{
+    font-size: 5.25rem;
+    margin-bottom: 2vh;
+}
+p{
+    font-size: 2.75rem;
+    margin-bottom: 2vh;
+}
+.contactList li .socialButton {
+  height: 20vh;
+  width: 20vh;
+}
+}
+@media (min-width: 2000px) {
+  h1{
+    font-size: 6.25rem;
+    margin-bottom: 2vh;
+}
+p{
+    font-size: 3.75rem;
+    margin-bottom: 2vh;
+}
+.contactList li h2 {
+  font-size: 2.75rem;
+}
+}
+@media (min-width: 3000px) {
+  h1{
+    font-size: 10rem;
+    margin-bottom: 2vh;
+}
+p{
+    font-size: 6rem;
+    margin-bottom: 2vh;
+}
+.contactList li h2 {
+  font-size: 3.75rem;
+}
+}
 @media (max-width: 1477px) {
     h1{
         font-size: 4rem;
@@ -160,6 +200,18 @@ p{
     .contactList li h2 {
         font-size: 1rem;
     }
+}
+@media (max-width: 300px) {
+  h1{
+      font-size: 1.5rem;
+  }
+  p{
+      font-size: 1.25rem;
+      margin-bottom: 2vh;
+  }
+  .contactList li h2 {
+      font-size: .75rem;
+  }
 }
 
 
