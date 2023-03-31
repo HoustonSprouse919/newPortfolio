@@ -37,11 +37,12 @@ h1::after {
   width: 20%;
   height: 100%;
   right: 10%;
-  z-index: -1;
+  z-index: -2;
 }
 .sidePic {
   width: 40vh;
-  height: 50vh;
+  height: 70vh;
+  z-index: 1;
 }
 .sidePic img {
   width: 100%;
@@ -57,7 +58,7 @@ h1::after {
 }
 @media (max-width: 800px) {
   .second {
-    height: 100vh;
+    min-height: 100vh;
     margin-top: -15vh;
   }
   .aboutMe {
@@ -90,7 +91,10 @@ h1::after {
     width: 90%;
   }
   .aboutMe {
-    display: inline-block;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   }
   .aboutMeText h1 {
     font-size: 15vw;
@@ -99,8 +103,8 @@ h1::after {
     font-size: 5;
   }
   .sidePic {
-    width: 100vw;
-    height: 40vh;
-    margin-right: 0vw;
+    width: 50vw;
+    height: 70vh;
+    margin: -20vh 0 0 0;
   }
 }

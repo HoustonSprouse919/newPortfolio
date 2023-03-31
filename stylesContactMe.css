@@ -1,3 +1,6 @@
+.main{
+  z-index: 1;
+}
 .backgroundColor2 {
   background-color: #7aff94;
   position: absolute;
