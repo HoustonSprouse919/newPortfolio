@@ -9,7 +9,7 @@ import todoList from "./images/todoList.png";
 import mixerFixerScreenShot from "./images/mixerFixerScreenShot.png";
 import pizzaScreenShot from "./images/pizzaScreenShot.png";
 import blender from "./images/blender.gif";
-import skeleton from "./images/skeleton.gif";
+import skeleton from "./images/skeletonRender0001.gif";
 
 const observer = new IntersectionObserver((entries) => {
   // this is an observer to see if
