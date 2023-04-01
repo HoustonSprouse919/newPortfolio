@@ -358,7 +358,11 @@ body {
     margin-left: 10%;
   }
 }
-
+@media (max-width: 1919px) {
+  .picSec {
+    margin-left: 10%;
+  }
+}
 
 @media (max-width: 1600px) {
   .sidebar h2 {
@@ -380,6 +384,11 @@ body {
   #checkOutId{
     margin-top: 15vh;
     font-size: 3vw;
+  }
+}
+@media (max-width: 1500px) {
+  .picSec {
+    margin-left: 0%;
   }
 }
 @media (max-width: 1100px) {
