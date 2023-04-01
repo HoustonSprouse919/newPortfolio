@@ -3,6 +3,8 @@ body{
 }
 .main{
   background-color: var(--accent);
+  background-size: 30%;
+  background-repeat: none;
   overflow: auto;
 }
 .sidebar{
