@@ -2,9 +2,6 @@ body{
   overflow: auto;
 }
 .main{
-  background-color: var(--accent);
-  background-size: 30%;
-  background-repeat: none;
   overflow: auto;
 }
 .sidebar{
@@ -19,8 +16,11 @@ body{
   width: 100%;
   align-items: center;
 }
+.navigation{
+  background-color: var(--mainBackground);
+}
 .navigation span {
-  color: var(--text);
+  color: black;
 }
 .navigation span:hover {
   color: var(--mainBackground);
@@ -34,7 +34,6 @@ body{
   flex-direction: column;
 }
 .myWork h1 {
-  color: var(--text);
   font-size: 10vh;
   margin: 5vh;
 }

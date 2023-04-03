@@ -55,9 +55,9 @@ p {
 .contactList li .socialButton {
   background-color: #7aceff;
   border-radius: 50%;
-  height: 20vh;
+  height: 15vh;
   position: relative;
-  width: 20vh;
+  width: 15vh;
 }
 .socialButton svg {
   color: white;
@@ -69,6 +69,7 @@ p {
   transform: translate(-50%, -50%);
 }
 .contactList li h2 {
+  margin-top: 0;
   font-size: 2.25rem;
 }
 a {
@@ -81,7 +82,7 @@ a {
   bottom: 0;
   aspect-ratio: 960/300;
   width: 100%;
-  height: 40vh;
+  height: 35vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
