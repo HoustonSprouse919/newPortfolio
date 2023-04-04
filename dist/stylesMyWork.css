@@ -5,7 +5,7 @@ body{
   overflow: auto;
 }
 .sidebar{
-  background-color: var(--mainBackground);
+  background-color: var(--accent);
 }
   .mainWorks {
   display: flex;
@@ -18,12 +18,13 @@ body{
 }
 .navigation{
   background-color: var(--mainBackground);
+  padding-bottom: 2vh;
 }
 .navigation span {
   color: black;
 }
 .navigation span:hover {
-  color: var(--mainBackground);
+  color: white;
 }
 .myWork {
   margin: 5vh 0 0 0;
