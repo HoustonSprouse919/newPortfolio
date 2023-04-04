@@ -21,10 +21,10 @@ body{
   padding-bottom: 2vh;
 }
 .navigation span {
-  color: black;
+  color: white;
 }
 .navigation span:hover {
-  color: white;
+  color: var(--accent);
 }
 .myWork {
   margin: 5vh 0 0 0;
