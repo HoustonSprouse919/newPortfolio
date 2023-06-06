@@ -209,10 +209,13 @@ body {
 .checkOut{
   font-family: 'Montserrat', sans-serif;
   margin: 10vh 0 0 2vw;
-  color: var(--accent);
 }
 #checkOutId{
   font-size: 3.5rem;
+}
+.checkOut a{
+  color: var(--accent);
+  text-decoration: none;
 }
 .socialLinks {
   display: flex;
